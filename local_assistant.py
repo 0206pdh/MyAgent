@@ -5,6 +5,11 @@ from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Iterable
 
+from dotenv import load_dotenv
+
+
+load_dotenv(Path(__file__).with_name(".env"))
+
 
 OPEN_HINTS = ("open", "launch", "열어", "실행")
 RECENT_HINTS = ("recent", "latest", "newest", "최근", "최신", "방금")
