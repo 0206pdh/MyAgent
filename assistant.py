@@ -6,6 +6,10 @@ from pathlib import Path
 from typing import Any
 
 from openai import OpenAI
+from dotenv import load_dotenv
+
+
+load_dotenv(Path(__file__).with_name(".env"))
 
 
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.1")
